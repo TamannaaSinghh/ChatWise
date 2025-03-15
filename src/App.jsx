@@ -8,6 +8,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./lib/firebase";
 import { useUserStore } from "./lib/userStore";
 import { useChatStore } from "./lib/chatStore";
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
 
@@ -43,6 +44,7 @@ const App = () => {
         <Login />
       )}
       <Notification/>
+      <Analytics />
     </div>
   );
 };
