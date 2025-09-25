@@ -23,7 +23,7 @@ A clean, fast, and privacy-first real-time chat application built with React.
 ---
 
 ## 🛠️ Tech Stack
-- **Frontend:** React, CSS (custom)  
+- **Frontend:** React, CSS (custom), Firebase   
 - **Deployment:** Vercel  
 
 ---
