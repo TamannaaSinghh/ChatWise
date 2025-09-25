@@ -1,7 +1,10 @@
 import List from "./components/list/List";
 import Chat from "./components/chat/Chat";
 import Detail from "./components/detail/Detail";
+import Dashboard from "./components/dashboard/Dashboard";
 import Login from "./components/login/Login";
+import Sidebar from "./components/sidebar/Sidebar";
+import Landing from "./components/landing/Landing";
 import Notification from "./components/notification/Notification";
 import { useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
@@ -36,12 +39,13 @@ const App = () => {
     <div className="container">
       {currentUser ? (
         <>
+          <Sidebar />
           <List />
-          {chatId && <Chat />}
+          {chatId ? <Chat /> : <Dashboard />}
           {chatId && <Detail />}
         </>
       ) : (
-        <Login />
+        <Landing />
       )}
       <Notification/>
       <Analytics />
@@ -50,4 +54,3 @@ const App = () => {
 };
 
 export default App;
- 

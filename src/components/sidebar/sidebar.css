@@ -1,0 +1,13 @@
+.sidebar{width:220px;min-width:220px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid #dddddd35;padding:16px;background-color:rgba(17,25,40,0.55);border-radius:12px 0 0 12px}
+.sidebar-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.sidebar-logo{font-size:20px}
+.sidebar-title{font-weight:700}
+.sidebar-nav{display:flex;flex-direction:column;gap:6px}
+.sidebar-link{display:block;padding:10px 12px;border-radius:10px;color:inherit;text-decoration:none;opacity:.95;background-color:transparent}
+.sidebar-link:hover{background-color:rgba(17,25,40,0.45)}
+.sidebar-link.active{background-color:#1a73e8}
+.sidebar-user{display:flex;align-items:center;gap:10px;margin-top:auto;padding:10px;border-radius:10px;background-color:rgba(17,25,40,0.45)}
+.sidebar-user img{width:36px;height:36px;border-radius:50%;object-fit:cover}
+.sidebar-username{font-size:14px;font-weight:600}
+.sidebar-status{opacity:.85;font-size:12px}
+@media (max-width: 900px){.sidebar{display:none}}
